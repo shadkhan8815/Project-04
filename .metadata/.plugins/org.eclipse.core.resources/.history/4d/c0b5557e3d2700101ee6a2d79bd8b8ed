@@ -1,0 +1,23 @@
+package in.co.ryas.proj4.bean;
+
+public class RoleBean {
+
+	private String name;
+	private String description;
+
+	public void setname(String name) {
+		this.name = name;
+	}
+
+	public String getname() {
+		return name;
+	}
+
+	public void setdescription(String description) {
+		this.description = description;
+	}
+
+	public String getdescription() {
+		return description;
+	}
+}

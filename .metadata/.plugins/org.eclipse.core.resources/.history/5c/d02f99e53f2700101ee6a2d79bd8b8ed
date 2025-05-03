@@ -1,0 +1,20 @@
+package in.co.ryas.proj4.test;
+
+ import in.co.ryas.proj4.model.RoleModel;
+
+public class TestRoleModel {
+
+	public static void main(String[] args) {
+
+	}
+
+	public static void nextPK() {
+
+		RoleModel rm = new RoleModel();
+
+		int i = rm.nextPK();
+
+		System.out.println("next pk : " + i);
+	}
+
+}

@@ -1,0 +1,40 @@
+package in.co.ryas.proj4.test;
+
+import java.sql.Timestamp;
+import java.util.Date;
+
+import in.co.ryas.proj4.bean.RoleBean;
+import in.co.ryas.proj4.model.RoleModel;
+
+public class TestRoleModel {
+
+	public static void main(String[] args) {
+
+		nextPK();
+
+	}
+
+	public static void nextPK() {
+
+		RoleModel rm = new RoleModel();
+
+		int i = rm.nextPK();
+
+		System.out.println("next pk : " + i);
+	}
+
+	public static void Add() {
+
+		RoleBean rb = new RoleBean();
+
+		rb.setid(1);
+		rb.setname("shad");
+		rb.setdescription("admin");
+		rb.setcreatedBy("root");
+		rb.setmodifiedBy("admin");
+		rb.setcreatedByDatetime(new Timestamp(new Date().getTime()));
+		rb.setmodifiedByDatetime(new Timestamp(new Date().getTime()));
+
+	}
+
+}

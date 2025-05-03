@@ -1,0 +1,37 @@
+package in.co.ryas.proj4.bean;
+
+import java.sql.Timestamp;
+
+public class BaseBean {
+	
+	private int id ;
+	private String createdBy ;
+	private String modifiedBy ;
+	private Timestamp createdByDatetime ;
+	private Timestamp modifiedByDatetime ;
+	
+	public void setid (int id) {
+		this.id = id ;
+	}
+	
+	public int getid () {
+		return id ;
+	}
+	
+	public void setcreatedBy (String createdBy) {
+		this.createdBy = createdBy ;
+	}
+	
+	public String getcreatedBy () {
+		return createdBy ;
+	}
+	
+	public void setmodifiedBy (String modifiedBy) {
+		this.modifiedBy = modifiedBy ;
+	}
+	
+	public tring getmodifiedBy () {
+		
+	}
+
+}

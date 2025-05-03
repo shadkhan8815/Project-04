@@ -1,0 +1,16 @@
+package in.co.ryas.proj4.bean;
+
+import java.util.Date;
+
+public class UserBean {
+
+	private String firstName;
+	private String lastName;
+	private String login;
+	private String password;
+	private String confirmPassword;
+	private Date dob;
+	private String mobileNo;
+	private long roleId;
+	private String gender;
+}

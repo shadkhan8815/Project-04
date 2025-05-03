@@ -1,0 +1,5 @@
+package in.co.ryas.proj4.util;
+
+public class JDBCDatasource {
+
+}

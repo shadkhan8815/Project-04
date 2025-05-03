@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;in.co.ryas.proj4.exception&apos; to &apos;in.co.ryas.proj4.Exception&apos;&#x0D;&#x0A;- Original project: &apos;Project-04&apos;&#x0D;&#x0A;- Original element: &apos;Project-04/src/main/java/in.co.ryas.proj4.exception&apos;&#x0D;&#x0A;- Renamed element: &apos;Project-04/src/main/java/in.co.ryas.proj4.Exception&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;in.co.ryas.proj4.exception&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java&lt;in.co.ryas.proj4.exception" name="in.co.ryas.proj4.Exception" qualified="false" references="true" stamp="1745921730829" textual="false" version="1.0"/>
+</session>
