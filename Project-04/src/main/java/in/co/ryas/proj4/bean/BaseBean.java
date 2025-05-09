@@ -2,54 +2,54 @@ package in.co.ryas.proj4.bean;
 
 import java.sql.Timestamp;
 
-    public class BaseBean {
+    public abstract class BaseBean implements DropdownListBean {
 
-	private int id;
+	private long id;
 	private String createdBy;
 	private String modifiedBy;
-	private Timestamp createdByDatetime;
-	private Timestamp modifiedByDatetime;
+	private Timestamp createdDatetime;
+	private Timestamp modifiedDatetime;
 	
 	
 
-	public void setid(int id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 
-	public int getid() {
+	public long getId() {
 		return id;
 	}
 
-	public void setcreatedBy(String createdBy) {
+	public void setCreatedBy(String createdBy) {
 		this.createdBy = createdBy;
 	}
 
-	public String getcreatedBy() {
+	public String getCreatedBy() {
 		return createdBy;
 	}
 
-	public void setmodifiedBy(String modifiedBy) {
+	public void setModifiedBy(String modifiedBy) {
 		this.modifiedBy = modifiedBy;
 	}
 
-	public String getmodifiedBy() {
+	public String getModifiedBy() {
 		return modifiedBy;
 	}
 
-	public void setcreatedByDatetime(Timestamp createdByDatetime) {
-		this.createdByDatetime = createdByDatetime;
+	public void setCreatedDatetime(Timestamp createdDatetime) {
+		this.createdDatetime = createdDatetime;
 	}
 
-	public Timestamp getcreatedByDatetime() {
-		return createdByDatetime;
+	public Timestamp getCreatedDatetime() {
+		return createdDatetime;
 	}
 
-	public void setmodifiedByDatetime(Timestamp modifiedByDatetime) {
-		this.modifiedByDatetime = modifiedByDatetime;
+	public void setModifiedDatetime(Timestamp modifiedDatetime) {
+		this.modifiedDatetime = modifiedDatetime;
 	}
 
-	public Timestamp getmodifiedDatetime() {
-		return modifiedByDatetime;
+	public Timestamp getModifiedDatetime() {
+		return modifiedDatetime;
 	}
-
+	 
 }

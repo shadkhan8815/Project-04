@@ -1,0 +1,151 @@
+# How to create a Maven-Project => ( Require internet connectivity for Maven project )
+  
+  Step 1-> Go to file, new and then click on maven project, click on next.
+
+  Step 2-> Set catalog to internal and set maven-archtype-webapp 1.0, click on next.
+
+  Step 3-> Give your package a name in Group-id and name your project in Architect id, click finish.
+
+===================================================================================================================
+
+# Add dependencies in pom.xml file ( pom = project object model )
+
+  1) log4j 
+  2) mysql for JDBC ( mysql connector in maven repository website )
+  3) c3po for JDBC data source
+  4) javax.servlet for servlet 
+
+  * you can find required dependencies on mavenrepository website 
+
+# Also add properties in pom.xml ( to get our maven project to run on java version 11 )
+
+  1) <maven.compiler.target>11</maven.compiler.target>	
+  2) <maven.compiler.source>11</maven.compiler.source>
+
+===================================================================================================================
+
+# update the project
+ 
+  right click -> maven -> update project -> force update -> ok
+
+# goto build path -> configure build path -> libraries -> double click on ( JRE System libraries ) -> 
+  workspace default
+
+===================================================================================================================
+
+# welcome file
+
+ In web.xml add welcome file ( index.jsp )
+ *
+  <welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+ *
+
+===================================================================================================================
+
+# Add server in your project
+
+  Right click on project -> run as server -> browse for server ( location for your server ) -> 
+  -> select your server -> click finish 
+
+===================================================================================================================
+
+# Create packages 
+
+  * Java Resources -> src/main/java
+
+  1) in.co.rays.proj4.bean
+  2) in.co.rays.proj4.model
+  3) in.co.rays.proj4.controller
+  4) in.co.rays.proj4.util
+  5) in.co.rays.proj4.test
+  6) in.co.rays.proj4.exception
+
+===================================================================================================================
+
+# Create properties file 
+
+  * Java Resources -> src/main/resources
+
+  1) in.co.rays.proj4.bundle ( file name - system.properties )
+
+===================================================================================================================
+
+# Create folder 
+
+  * src -> main -> webapp
+
+  1) image
+  2) jsp
+
+===================================================================================================================
+
+# Design patter used in project-04
+
+1. Singleton design pattern used in JDBCDataSource ( advance java Data base connection topic )
+
+2. Factory design pattern 
+
+3. Builder design pattern
+
+4. Front controller design pattern
+
+===================================================================================================================
+
+# Create classes in packages
+
+  => Create JDBCDataSource class in in.co.rays.proj4.util package.
+
+  => exception
+     -> ApplicationException
+     -> DatabaseException
+     -> DuplicaterecordException
+     -> RecordNotFoundException
+
+  => Create bean classes for all database. ( create a class that contain common column name ) .
+  => Create model classes for all database.
+  => Create testmodel classes for all database.
+
+===================================================================================================================
+
+=> Insert following row in st_role table
+
+  -> admin  
+  -> student  
+  -> faculty  
+  -> kiosk 
+
+ ===================================================================================================================
+
+=> Create nextPK, findbyPK, add, update, delete, search methods and also create some additional methods as mentioned  
+
+  -> CollegeModel ( make findByName )
+  -> CourseModel ( make findByName )
+  -> FacultyModel ( make findByCollegeID )
+  -> MarksheetModel ( make findByStudentID )
+  -> RoleModel ( make findByName )
+  -> StudentModel ( make findByEmail )
+  -> SubjectModel ( make findByCourseID )
+  -> TimeTableModel ( make findBySubjectID )
+  -> UserModel (make findByRoleID )
+
+ ===================================================================================================================
+
+=> util package contain utility classes
+  
+  utility classes are the classes that are reusable.
+
+  #make utility classes in util package
+
+   -> DataUtility ( To format data from format to another  )
+   -> DataValidator ( To check whether the formatted data is valid or not )
+   -> EmailBuilder 
+   -> EmailMessage
+   -> EmailUtility
+   -> HTMLUtility ( To provide HTML contains )
+   -> PropertyBuilder ( To read property values from application properties file )
+   -> ServletUtility ( To provide utility operation for servlet container )
+   -> JDBCDataSource ( It is a data connection pool )
+
+====================================

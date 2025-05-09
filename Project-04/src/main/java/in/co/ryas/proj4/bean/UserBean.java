@@ -2,7 +2,7 @@ package in.co.ryas.proj4.bean;
 
 import java.util.Date;
 
-public class UserBean {
+public class UserBean extends BaseBean {
 
 	private String firstName;
 	private String lastName;
@@ -13,76 +13,73 @@ public class UserBean {
 	private String mobileNo;
 	private long roleId;
 	private String confirmPassword;
-
-	public void setfirstName(String firstName) {
-		this.firstName = firstName;
-	}
-
-	public String getfirstName() {
+	
+	
+	public String getFirstName() {
 		return firstName;
 	}
-
-	public void setlastName(String lastName) {
-		this.lastName = lastName;
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
 	}
-
-	public String getlastNmae() {
+	public String getLastName() {
 		return lastName;
 	}
-
-	public void setlogin(String login) {
-		this.login = login;
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
 	}
-
-	public String getlogin() {
+	public String getLogin() {
 		return login;
 	}
-
-	public void setpassword(String password) {
-		this.password = password;
+	public void setLogin(String login) {
+		this.login = login;
 	}
-
-	public String getpassword() {
+	public String getPassword() {
 		return password;
 	}
-
-	public void setdob(Date dob) {
-		this.dob = dob;
+	public void setPassword(String password) {
+		this.password = password;
 	}
-
-	public Date getdob() {
+	public Date getDob() {
 		return dob;
 	}
-
-	public void setgender(String gender) {
-		this.gender = gender;
+	public void setDob(Date dob) {
+		this.dob = dob;
 	}
-
-	public String getgender() {
+	public String getGender() {
 		return gender;
 	}
-
-	public void setmobileNo(String mobileNo) {
-		this.mobileNo = mobileNo;
+	public void setGender(String gender) {
+		this.gender = gender;
 	}
-
-	public String getmobileNo() {
+	public String getMobileNo() {
 		return mobileNo;
 	}
-
-	public void setroleId(long roleId) {
-		this.roleId = roleId;
+	public void setMobileNo(String mobileNo) {
+		this.mobileNo = mobileNo;
 	}
-
-	public long getroleId() {
+	public long getRoleId() {
 		return roleId;
 	}
-
-	public void setconfirmPassword(String confirmPassword) {
-		this.confirmPassword = confirmPassword;
+	public void setRoleId(long roleId) {
+		this.roleId = roleId;
 	}
-
-	public String getconfirmPasword() {
+	public String getConfirmPassword() {
 		return confirmPassword;
 	}
+	public void setConfirmPassword(String confirmPassword) {
+		this.confirmPassword = confirmPassword;
+	}
+	@Override
+	public String getKey() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	@Override
+	public String getValue() {
+		// TODO Auto-generated method stub
+		return null ;
+	}
+
+
 }

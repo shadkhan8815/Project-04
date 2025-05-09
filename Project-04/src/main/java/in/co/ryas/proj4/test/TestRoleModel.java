@@ -11,60 +11,73 @@ public class TestRoleModel {
 	public static void main(String[] args) throws Exception {
 
 //		nextPK();
-//		Add();
-//		Update();
-		Delete();
+		   //     Add();
+		          //    Update();
+		                   //    Delete();
 	}
 
+	
+	
 	public static void nextPK() {
 
 		RoleModel model = new RoleModel();
 
-		int i = model.nextPK();
+		  int i = model.nextPK();
 
 		System.out.println("next pk : " + i);
 	}
 
+	
+	
+	
 	public static void Add() throws Exception {
 
 		RoleBean bean = new RoleBean();
+		
+		
+		         bean.setId(1);
+	          	 bean.setName("shad");
+		         bean.setDescription("admin");
+		         bean.setCreatedBy("root");
+		         bean.setModifiedBy("admin");
+		         bean.setCreatedDatetime(new Timestamp(new Date().getTime()));
+		         bean.setModifiedDatetime(new Timestamp(new Date().getTime()));
 
-		bean.setid(1);
-		bean.setname("shad");
-		bean.setdescription("admin");
-		bean.setcreatedBy("root");
-		bean.setmodifiedBy("admin");
-		bean.setcreatedByDatetime(new Timestamp(new Date().getTime()));
-		bean.setmodifiedByDatetime(new Timestamp(new Date().getTime()));
-
+		 
 		RoleModel model = new RoleModel();
 
-		model.add(bean);
+		          model.add(bean);
 
 	}
+	
+	
+	
 
 	public static void Update() throws Exception {
 
 		RoleBean bean = new RoleBean();
 
-		bean.setid(1);
-		bean.setname("shad");
-		bean.setdescription("i am student");
-		bean.setcreatedBy("root");
-		bean.setmodifiedBy("root");
-		bean.setcreatedByDatetime(new Timestamp(new Date().getTime()));
-		bean.setmodifiedByDatetime(new Timestamp(new Date().getTime()));
+		         bean.setId(1);
+		         bean.setName("shad");
+		         bean.setDescription("i am student");
+		         bean.setCreatedBy("root");
+		         bean.setModifiedBy("root");
+		         bean.setCreatedDatetime(new Timestamp(new Date().getTime()));
+		         bean.setModifiedDatetime(new Timestamp(new Date().getTime()));
 
 		RoleModel model = new RoleModel();
 
-		model.update(bean);
+		          model.update(bean);
 	}
 
+	
+	
+	
 	public static void Delete() throws Exception {
 
 		RoleModel model = new RoleModel();
 
-		model.delete(1);
+		          model.delete(1);
 
 	}
 
