@@ -3,6 +3,7 @@ package in.co.ryas.proj4.model;
 import java.sql.Connection;
  import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 
 import in.co.ryas.proj4.bean.TimeTableBean;
 import in.co.ryas.proj4.util.JDBCDataSource;
@@ -19,7 +20,7 @@ public int nextPK() {
 		try {
 
 			conn = JDBCDataSource.getConnection();
-
+			
 			PreparedStatement pstmt = conn.prepareStatement("select max(ID) from st_timetable");
 
 			ResultSet rs = pstmt.executeQuery();
@@ -35,7 +36,7 @@ public int nextPK() {
 	}
 
 
-   public TimeTableBean findByPK(long id) {
+   public TimeTableBean findByPK(long id) throws SQLException {
 	   
 	   Connection conn = null ;
 	   TimeTableBean bean = null ;
@@ -44,6 +45,8 @@ public int nextPK() {
 		   int pk = nextPK();
 		   
 		conn = JDBCDataSource.getConnection();
+		
+		conn.setAutoCommit(false);
 		
 		PreparedStatement stmt = conn.prepareStatement("select * from st_timetable where id = ?");
 
@@ -69,9 +72,13 @@ public int nextPK() {
 			bean.setCreatedDatetime(rs.getTimestamp(12));
 			bean.setModifiedDatetime(rs.getTimestamp(13));
 		}
+		conn.commit();
+		stmt.close();
+		rs.close();
 		
 	} catch (Exception e) {
  		e.printStackTrace();
+ 		conn.rollback();
 	}
 	return bean;
 	   

@@ -23,10 +23,10 @@
 <body>
 
 	<div id="footer">
-		<CENTER>
-			<hr>
-			<H3>&copy; Copyrights RAYS Technologies</H3>
-		</CENTER>
-	</div>
+		       <CENTER>
+		            	<hr>
+		 	            <H3>&copy; Copyrights RAYS Technologies</H3>
+	          </CENTER>
+	   </div>
 </body>
 </html>

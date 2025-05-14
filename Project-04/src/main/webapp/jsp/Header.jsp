@@ -16,7 +16,7 @@
    
    boolean userloggedin = userbean != null ;
    
-   String welcomeMsg = "WELCOME," ;
+   String welcomeMsg = "WELCOME ; " ;
    
    if(userloggedin){
 	               String role = (String) session.getAttribute("role");
@@ -31,21 +31,21 @@
    <table>
            <tr>
                 <th> </th>  
-                   <td width="90%"><a href="<%=ORSView.WELCOME_CTL%>">Welcome</b></a> ||
+                   <td width="90%"><a href="<%=ORSView.WELCOME_CTL%>">WELCOME</b></a> ||
 				<%
 				if (userloggedin) {
 			%> 
-			<a href="LoginCtl?operation=logout">Logout</b></a> <%
+			<a href="LoginCtl?operation=logout">LOGOUT</b></a> <%
  	} else {
  %> 
- <a href="<%=ORSView.LOGIN_CTL%>">Login</b></a> <%
+ <a href="<%=ORSView.LOGIN_CTL%>">LOGIN</b></a> <%
  	}
  %>
  </td>
 			<td rowspan="2">
 				<h1 align="right">
-					<img src="<%=ORSView.APP_CONTEXT%>/img/customLogo.jpg" width="175"
-						height="50">
+					<img src="<%=ORSView.APP_CONTEXT%>/img/customLogo.jpg" 
+					width="175" height="50">
 				</h1>
 			</td>
 		</tr>

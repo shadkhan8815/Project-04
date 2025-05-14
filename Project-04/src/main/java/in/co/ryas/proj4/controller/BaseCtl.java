@@ -23,20 +23,23 @@ import in.co.ryas.proj4.util.ServletUtility;
  */
 public abstract class BaseCtl extends HttpServlet {
 
-	public static final String OP_SAVE = "Save";
-	public static final String OP_CANCEL = "Cancel";
-	public static final String OP_DELETE = "Delete";
-	public static final String OP_LIST = "List";
-	public static final String OP_SEARCH = "Search";
-	public static final String OP_VIEW = "View";
-	public static final String OP_NEXT = "Next";
-	public static final String OP_PREVIOUS = "Previous";
-	public static final String OP_NEW = "New";
-	public static final String OP_GO = "Go";
-	public static final String OP_BACK = "Back";
-	public static final String OP_LOG_OUT = "Logout";
-	public static final String OP_RESET = "Reset";
-	public static final String OP_UPDATE = "update";
+	public static final String OP_SAVE = "SAVE";
+	public static final String OP_CANCEL = "CANCEL";
+	public static final String OP_DELETE = "DELETE";
+	public static final String OP_LIST = "LIST";
+	public static final String OP_SEARCH = "SEARCH";
+	public static final String OP_VIEW = "VIEW";
+	public static final String OP_NEXT = "NEXT";
+	public static final String OP_PREVIOUS = "PREVOIUS";
+	public static final String OP_NEW = "NEW";
+	public static final String OP_GO = "GO";
+	public static final String OP_BACK = "BACK";
+	public static final String OP_LOG_OUT = "LOGOUT";
+	public static final String OP_RESET = "RESET";
+	public static final String OP_UPDATE = "UPDATE";
+	public static final String OP_SING_IN = "SINGIN";
+	public static final String OP_SING_UP = "SINGUP";
+
 
 	/**
 	 * Success message key constant
@@ -140,10 +143,10 @@ public abstract class BaseCtl extends HttpServlet {
 			// Check validation, If fail then send back to page with error
 			// messages
 
-			if (!validate(request)) {
+
+			if (!validate(request)) {	// call setBean method for show inserted data
 				System.out.println("Bctl validate ");
 				BaseBean bean = (BaseBean) populateBean(request);
-				// call setBean method for show inserted data
 				ServletUtility.setBean(bean, request);
 				ServletUtility.forward(getView(), request, response);
 				return;

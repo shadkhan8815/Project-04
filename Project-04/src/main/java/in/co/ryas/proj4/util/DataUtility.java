@@ -1,6 +1,5 @@
 package in.co.ryas.proj4.util;
 
-
 import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -17,7 +16,7 @@ public class DataUtility {
 	/**
 	 * Application Date Format
 	 */
-	public static final String APP_DATE_FORMAT = "MM/dd/yyyy";
+	public static final String APP_DATE_FORMAT = "yyyy-MM-dd";
 
 	public static final String APP_TIME_FORMAT = "MM/dd/yyyy HH:mm:ss";
 
@@ -183,7 +182,7 @@ public class DataUtility {
 	public static String getStringFromDouble(Double val) {
 		return val != null ? val.toString() : "";
 	}
-	
+
 	public static Long getLong2(String val) {
 		if (DataValidator.isLong(val)) {
 			return Long.parseLong(val);
@@ -191,8 +190,6 @@ public class DataUtility {
 			return null;
 		}
 	}
-
-	
 
 	public static void main(String[] args) {
 		System.out.println(getInt("124"));

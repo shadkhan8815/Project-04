@@ -1,5 +1,6 @@
 package in.co.ryas.proj4.test;
 
+import java.sql.SQLException;
 import java.util.List;
 
 import in.co.ryas.proj4.bean.TimeTableBean;
@@ -24,7 +25,7 @@ public class TestTimeTableModel {
 	}
 	
 	
-	public static void FINDBYPK() {
+	public static void FINDBYPK() throws SQLException {
 		
 		TimeTableModel model = new TimeTableModel();
 		

@@ -12,21 +12,25 @@
 <body>
 
 	<br>
+	
 	<br>
 
 
-	<div align="center">
-		<img src="img/customLogo.jpg" align="middle" width="318" height="127"
-			border="0">
+	<div
+	 align="center">
+		<img src="img/customLogo.jpg"
+		 align="middle" width="318" height="127" border="0">
 	</div>
 
 
 	<br>
+	
 	<br>
-
+      <font size="40px" color="black" ><h3 align="center"> ONLINE RESULT SYSTEM</h3></font>
+	     
 	<h1 align="center">
-		<font size="10px" color="red"> <a
-			href="<%=ORSView.WELCOME_CTL%>"> Online Result System</a></font>
+		<font size="5px" color="red"> 
+		<a href="<%=ORSView.WELCOME_CTL%>"> Click here to enter</a></font>
 	</h1>
 </body>
 </html>

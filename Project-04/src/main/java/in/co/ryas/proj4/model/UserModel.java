@@ -132,6 +132,7 @@ try {
 			System.out.println("data inserted => " + i);
 			
 		} catch (Exception e) {
+			e.printStackTrace();
 			
 			try {
 				conn.rollback();
