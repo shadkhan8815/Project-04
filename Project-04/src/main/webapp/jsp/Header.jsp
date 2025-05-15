@@ -50,6 +50,7 @@
 			</td>
 		</tr>
 
+
 		<tr>
 			<th></th>
 			<td>
@@ -57,38 +58,46 @@
 			</td>
 		</tr>
 
+
 		<%
 			if (userloggedin) {
 		%>
 
+
 		<tr>
 			<th></th>
-			<td colspan="2"><font style="font-size: 18px"> <%
- 	if (userbean.getRoleId() == RoleBean.ADMIN) {
- %> <a href="<%=ORSView.MARKSHEET_CTL%>">Add Marksheet</b></a> | <a
-					href="<%=ORSView.MARKSHEET_LIST_CTL%>">Marksheet List</b></a> | <a
-					href="<%=ORSView.USER_CTL%>">Add User</b></a> | <a
-					href="<%=ORSView.USER_LIST_CTL%>">User List</b></a> | <a
-					href="<%=ORSView.COLLEGE_CTL%>">Add College</b></a> | <a
-					href="<%=ORSView.COLLEGE_LIST_CTL%>">College List</b></a> | <a
-					href="<%=ORSView.ROLE_CTL%>">Add Role</b></a> | <a
-					href="<%=ORSView.ROLE_LIST_CTL%>">Role List</b></a> | <a
-					href="<%=ORSView.STUDENT_CTL%>">Add Student</b></a> | <a
-					href="<%=ORSView.STUDENT_LIST_CTL%>">Student List</b></a> | <a
-					href="<%=ORSView.COURSE_CTL%>">Add Course</b></a> | <a
-					href="<%=ORSView.COURSE_LIST_CTL%>">Course List</b></a> | <a
-					href="<%=ORSView.SUBJECT_CTL%>">Add Subject</b></a> | <a
-					href="<%=ORSView.SUBJECT_LIST_CTL%>">Subject List</b></a> | <a
-					href="<%=ORSView.FACULTY_CTL%>">Add Faculty</b></a> | <a
-					href="<%=ORSView.FACULTY_LIST_CTL%>">Faculty List</b></a> | <a
-					href="<%=ORSView.TIMETABLE_CTL%>">Add TimeTable</b></a> | <a
-					href="<%=ORSView.TIMETABLE_LIST_CTL%>">TimeTable List</b></a> | <a
-					target="blank" href="<%=ORSView.JAVA_DOC_VIEW%>">Java Doc</b></a> <%
- 	}
- %>
+			<td colspan="2"><font style="font-size: 18px"> 
+			
+			
+		      	<%
+ 	             if (userbean.getRoleId() == RoleBean.ADMIN) {
+               %> 
+                    <a href="<%=ORSView.MARKSHEET_CTL%>">Add Marksheet</b></a> || 
+                    <a href="<%=ORSView.MARKSHEET_LIST_CTL%>">Marksheet List</b></a> || 
+                    <a href="<%=ORSView.USER_CTL%>">Add User</b></a> || 
+					<a href="<%=ORSView.USER_LIST_CTL%>">User List</b></a> || 
+					<a href="<%=ORSView.COLLEGE_CTL%>">Add College</b></a> || 
+					<a href="<%=ORSView.COLLEGE_LIST_CTL%>">College List</b></a> || 
+					<a href="<%=ORSView.ROLE_CTL%>">Add Role</b></a> || 
+					<a href="<%=ORSView.ROLE_LIST_CTL%>">Role List</b></a> || 
+					<a href="<%=ORSView.STUDENT_CTL%>">Add Student</b></a> || 
+					<a href="<%=ORSView.STUDENT_LIST_CTL%>">Student List</b></a> || 
+					<a href="<%=ORSView.COURSE_CTL%>">Add Course</b></a> || 
+					<a href="<%=ORSView.COURSE_LIST_CTL%>">Course List</b></a> || 
+					<a href="<%=ORSView.SUBJECT_CTL%>">Add Subject</b></a> || 
+					<a href="<%=ORSView.SUBJECT_LIST_CTL%>">Subject List</b></a> || 
+					<a href="<%=ORSView.FACULTY_CTL%>">Add Faculty</b></a> || 
+					<a href="<%=ORSView.FACULTY_LIST_CTL%>">Faculty List</b></a> || 
+					<a href="<%=ORSView.TIMETABLE_CTL%>">Add TimeTable</b></a> || 
+					<a href="<%=ORSView.TIMETABLE_LIST_CTL%>">TimeTable List</b></a> || 
+					<a target="blank" href="<%=ORSView.JAVA_DOC_VIEW%>">Java Doc</b></a> 
+			<%
+ 	     }
+      %>
 
-			</font></td>
-		</tr>
+			</font>
+	   </td>
+ </tr>
 		
 		<%
 			}

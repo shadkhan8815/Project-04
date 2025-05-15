@@ -70,11 +70,11 @@ public class CourseModel {
 		
 		int pk = 0;
 
-		/*
-		 * CourseBean duplicatecourseName = findByName(bean.getName());
-		 * if(duplicatecourseName != null) { throw new
-		 * DuplicateRecordException("course already exist"); }
-		 */
+		
+		  CourseBean duplicatecourseName = findByName(bean.getName());
+		  if(duplicatecourseName != null) { throw new
+		  DublicateRecordException("course already exist"); }
+		 
 
 		try {
 			conn = JDBCDataSource.getConnection();

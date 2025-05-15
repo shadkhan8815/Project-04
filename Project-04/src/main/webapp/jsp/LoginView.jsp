@@ -18,6 +18,10 @@
 
 <center>
 
+             <span style="color : red"><%=ServletUtility.getErrorMessage(request)%></span>
+             
+             <span style="color : green"><%=ServletUtility.getSuccessMessage(request)%></span>
+       
        <table>
        
                 <tr>
@@ -45,6 +49,8 @@
                   <td>
                   <input type="submit" name="operation"
                           value="<%=LoginCtl.OP_SING_IN%>">
+                  <input type="submit" name="operation"
+                          value="<%=LoginCtl.OP_SING_UP%>">
                   </td>                       
           </table>
 

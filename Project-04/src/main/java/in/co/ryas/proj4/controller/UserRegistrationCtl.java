@@ -142,6 +142,7 @@ public class UserRegistrationCtl extends BaseCtl {
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		
 		ServletUtility.forward(getView(), request, response);
 	}
 

@@ -130,9 +130,9 @@ public class FacultyModel {
 		bean.setCourseName(coursebean.getName());
 		
 		SubjectModel subjectmodel = new SubjectModel();
-// 		SubjectBean subjectbean = subjectmodel.find(bean.getSubjectId());
-//		bean.setSubjectName(subjectBean.getSubjectName());
-//		
+ 		SubjectBean subjectbean = subjectmodel.FindByPK(bean.getSubjectId());
+		bean.setSubjectName(subjectbean.getName());
+		
 		FacultyBean existbean = findByEmail(bean.getEmail());
 		
 		if(existbean != null) {

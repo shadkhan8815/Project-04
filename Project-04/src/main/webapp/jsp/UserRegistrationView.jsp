@@ -187,6 +187,7 @@
                                  <input type="submit" name="operation" value="<%=UserRegistrationCtl.OP_SING_UP%>">
                                       &nbsp;
                                  <input type="submit" name="operation" value="<%=UserRegistrationCtl.OP_RESET%>">
+                                      
                                  </td>
                           </tr>
                 </table>
